@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aeroglass.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/aeroglass.css">    
     <link rel="stylesheet" href="css/colunias.css">
-    <link rel="stylesheet" href="css/animação.css">
-    <link rel="stylesheet" href="css/aeroletras.css">
+    <link rel="stylesheet" href="css/letras_animacao.css">
 </head>
 <body>
     <div id="site">
@@ -22,8 +20,8 @@
                     <h2>Cadastro do Aluno</h2>
                 </div>
                 <div class="colunia2 ">
-                    <form action="">
-                        <table class="aero-glass" border="1">
+                    <form>
+                        <table class="aero-glass">
                             <tr>
                                 <th>Matrícula</th>
                                 <td><input type="text" name="matricula" id="matricula"></td>
@@ -56,7 +54,7 @@
                     <h2>Listagem das Informações de Alunos</h2>
                 </div>
                 <div class="colunia2_2">
-                    <table class="aero-glass" border="2">
+                    <table class="aero-glass">
                         <tbody id="corpoTabelaListagem">
                             <tr>
                                 <th>Matrícula</th>
@@ -104,17 +102,16 @@
                 </div>
                 <div id="colunapia3_2">
                     <table>
-                        <table>
-                            <tr>
-                                <td>Matrícula: <input type="text" name="editar" id="editar"></td>
-                            </tr>
-                            <tr>
-                                <td>Nota 1: <input type="text" name="editnota1" id="editnota1"></td>
-                            </tr>
-                            <tr>
-                                <td>Nota 2: <input type="text" name="editnota2" id="editnota2"></td>
-                            </tr>
-                        </table>
+                        <tr>
+                            <td>Matrícula: <input type="text" name="editar" id="editar"></td>
+                        </tr>
+                        <tr>
+                            <td>Nota 1: <input type="text" name="editnota1" id="editnota1"></td>
+                        </tr>
+                        <tr>
+                            <td>Nota 2: <input type="text" name="editnota2" id="editnota2"></td>
+                        </tr>
+                    </table>
                 </div>
                 <div id="colunapia3_3">
                     <button type="button" onclick="editarNotas()">Editar</button>
@@ -122,6 +119,7 @@
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
