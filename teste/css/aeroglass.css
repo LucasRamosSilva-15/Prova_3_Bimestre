@@ -1,0 +1,87 @@
+.aero-glass {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.45) 0%,
+    rgba(255,255,255,0.25) 60%,
+    rgba(200,220,255,0.18) 100%
+  );
+  border-radius: 12px;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 0 rgba(255,255,255,0.7) inset;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 24px 32px;
+  /* Opcional: brilho na borda superior */
+  position: relative;
+  overflow: hidden;
+}
+.aero-glass::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.7) 0%,
+    rgba(255,255,255,0.15) 100%
+  );
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  pointer-events: none;
+}
+
+.glass-reflection {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reflexo no topo */
+.glass-reflection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.12) 80%, transparent 100%);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 2;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 3px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  /* border: 1px solid #060505; */
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 0 rgba(255,255,255,0.7) inset;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.45) 0%,
+    rgba(255,255,255,0.25) 60%,
+    rgba(200,220,255,0.18) 100%
+  );
+}
+button {
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 9px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 0 rgba(255,255,255,0.7) inset;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.45) 0%,
+    rgba(255,255,255,0.25) 60%,
+    rgba(200,220,255,0.18) 100%
+  );
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/aeroglass.css">
+        <link rel="stylesheet" href="css/aeroletras.css".css">
+        <link rel="stylesheet" href="css/animação.css">
+        <title>Prática Cadastro Livros</title>
+    </head>
+
+    <body>
+        <div id="asll">
+            <h2 class="aero-glass glass-reflection" id="titulogrande">Cadastro de Livros</h2>
+        <table class="aero-glass glass-reflection" id="cadastrou">
+            <tr>
+                <td class="aero-glass"><label>Livro ID:</label></td>
+                <td class="aero-glass"><input type="text" id="livroID"></td>
+            </tr>
+            <tr>
+                <td class="aero-glass"><label>Título:</label></td>
+                <td class="aero-glass"><input type="text" id="livroTitulo"></td>
+            </tr>
+            <tr>
+                <td class="aero-glass"><label>Ano publicação:</label></td>
+                <td class="aero-glass"><input type="text" id="livroAno"></td>
+            </tr>
+            <tr>
+                <td class="aero-glass"> <button onclick="resetarLivro()">Resetar Livro</button> </td>
+                <td class="aero-glass"> <button onclick="efetuarCadastroLivro()">Cadastrar Livro</button> </td>
+            </tr>
+        </table>
+        <div id="listagem">
+            <div class="aero-glass glass-reflection">
+                <h3 class="aero-glass">Listagem das informações de livros</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="aero-glass">Livro ID</th>
+                    <th class="aero-glass">Título</th>
+                    <th class="aero-glass">Ano de publicação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabelaListagem">
+                <!-- Novas linhas de tabela serão adicionadas pelo JavaScript aqui -->
+            </tbody>
+        </table>
+
+        <h3 class="aero-glass">Busca de livro (por título):</h3>
+        <input type="text" id="inputBuscarTitulo" placeholder="Digite parte do título">
+        <button onclick="processarBuscaLivroPorTítulo()">Buscar</button>
+
+        <h4 class="aero-glass">Resultado da busca:</h4>
+        <p class="aero-glass" id="parResultadoBusca">Nenhuma busca foi efetuada ainda.</p>
+
+        <script src="index.js"></script>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>
