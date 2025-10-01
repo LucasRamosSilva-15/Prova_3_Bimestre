@@ -21,16 +21,15 @@
 .colunia2 table {
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
 }
 .colunia2 th, .colunia2 td, .colunia2 tr {
-    border: 1px solid black;
+    border: none;
     padding: 5px;
     height: 49px;
     font-size: 17px;
 }
 .colunia3 button {
-    margin: 8px;
+    margin: 14px;
     margin-left: 155px;
     padding: 5px;
     font-size: 20px;
@@ -39,10 +38,9 @@
 .colunia2_2 table{
     width: 100%;
     height: 60%;
-    background-color: antiquewhite;
 }
 .colunia2_2 th, .colunia2_2 td, .colunia2_2 tr {
-    border: 1px solid black;
+    border: none;
     padding: 5px;
     height: 48px;
     font-size: 17px;

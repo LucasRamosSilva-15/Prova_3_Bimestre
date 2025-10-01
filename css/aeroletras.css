@@ -1,27 +1,16 @@
-#palavra-central {
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-#palavra-pequena {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: large;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 .aero-glass h2, .aero-glass h3 , .aero-glass td, .aero-glass th, .aero-glass p, .aero-glass h1 {
   position: relative;
   z-index: 2;
 }
-.aero-glass h2, .aero-glass td, .aero-glass th, .aero-glass p, .aero-glass h1 {
+.aero-glass h2, .aero-glass td, .aero-glass p, .aero-glass h1 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.45rem;
   color: #000000;
   text-shadow:
     0 1px 6px rgba(80,120,200,0.25),
     0 1px 0 #918e8e;
-  letter-spacing: 1px;
-  margin: 0;
+  letter-spacing: 2px;
+  margin: 6px;
 }
 .aero-glass h3 {
   font-weight: 600;
@@ -33,23 +22,24 @@
   letter-spacing: 1px;
   margin: 10px;
 }
-#titulogrande {
+.aero-glass-titulo {
   font-weight: 600;
-  font-size: 1.5rem;
-  color: #000000;
-  text-shadow:
-    0 1px 6px rgba(80,120,200,0.25),
-    0 1px 0 #fff;
-  letter-spacing: 1px;
-  margin: 10px;
-}
-.aero-glass th {
-  font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #000000;
   text-shadow:
     0 1px 6px rgba(80,120,200,0.25),
     0 1px 0 #918e8e;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px;
+}
+.aero-glass th {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #000000;
+  text-shadow:
+    0 1px 6px rgba(80,120,200,0.25),
+    0 1px 2px #918e8e;
   letter-spacing: 1px;
   margin-top: 10px;
 }
